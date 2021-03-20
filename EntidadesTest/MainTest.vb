@@ -8,6 +8,7 @@ Module MainTest
         'jornal()
         'departamento()
         'professional()
-        factura
+        'factura()
+        empresas()
     End Sub
 End Module

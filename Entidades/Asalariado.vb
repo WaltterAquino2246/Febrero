@@ -7,11 +7,6 @@ Public Class Asalariado
         Me.Departamento = departamento
     End Sub
 
-
-
-
-
-
     Private _cuil As String
     Public Property Cuil() As String
         Get
@@ -61,7 +56,7 @@ Public Class Asalariado
         Return Nombre & " " & Cuil
     End Function
 
-    Public Function MontoPago() As Decimal Implements Empleado.MontoPago
+    Public Overridable Function MontoPago() As Decimal Implements Empleado.MontoPago
         Throw New NotImplementedException()
     End Function
 End Class

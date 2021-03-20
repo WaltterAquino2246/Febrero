@@ -43,8 +43,7 @@
         End Set
     End Property
 
-    Public Overloads Function MontoPago() As Decimal
-
+    Public Overrides Function MontoPago() As Decimal
         Return DiasTrabajados * MontoJornada
     End Function
 

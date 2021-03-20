@@ -64,5 +64,4 @@
         End Set
     End Property
 
-    Private _pepe As Decimal
 End Class

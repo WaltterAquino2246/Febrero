@@ -24,7 +24,11 @@
     End Property
 
     Public Function TotalPago() As Decimal
-        Return 0
+        Dim sumatoria As Decimal
+        For Each item In _asalariado
+            sumatoria += item.MontoPago
+        Next
+        Return sumatoria
     End Function
 
     Private _asalariado As List(Of Asalariado)
@@ -41,5 +45,6 @@
     Public Function GetAllasalariados() As List(Of Asalariado)
         Return _asalariado
     End Function
+
 
 End Class

@@ -22,16 +22,13 @@
 
 
     Public Shared Function GetEmpleados() As List(Of Empleado)
-
-        Dim _empleados As New List(Of Empleado)
-
+        Dim empleados As New List(Of Empleado)
         For Each item In _departamento
-            _empleados.Add(item)
+            For Each persona In item.GetAllasalariados
+                Console.WriteLine(persona)
+            Next
         Next
-        For Each item In _professional
-            _professional.Add(item)
-        Next
-        Return _empleados
+        Return empleados
     End Function
 
 
@@ -48,9 +45,7 @@
         For Each item In _departamento
             sumatoria += item.TotalPago
         Next
-        For Each item In _professional
-            sumatoria += item.MontoPago
-        Next
+
         Return sumatoria
     End Function
 

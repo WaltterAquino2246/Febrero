@@ -22,7 +22,7 @@
     End Property
 
 
-    Public Overloads Function MontoPago() As Decimal
+    Public Overrides Function MontoPago() As Decimal
 
         Return Sueldo
     End Function
